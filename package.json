@@ -1,0 +1,28 @@
+{
+    "name": "curso-platzi-react-avanzado",
+    "version": "1.0.0",
+    "description": "¡Sígueme en Youtube! https://www.youtube.com/midudev",
+    "main": "webpack.config.js",
+    "scripts": {
+        "dev": "webpack-dev-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/midudev/curso-platzi-react-avanzado.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
+    },
+    "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
+    "dependencies": {
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12"
+    },
+    "devDependencies": {
+        "html-webpack-plugin": "^4.5.0",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
