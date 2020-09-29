@@ -4,7 +4,11 @@
     "description": "¡Sígueme en Youtube! https://www.youtube.com/midudev",
     "main": "webpack.config.js",
     "scripts": {
-        "dev": "webpack-dev-server"
+        "vercel-build": "npm run build",
+        "build": "webpack",
+        "dev": "webpack-dev-server",
+        "lint": "standard",
+        "lint-fix": "standard --fix"
     },
     "repository": {
         "type": "git",
@@ -18,11 +22,29 @@
     },
     "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
     "dependencies": {
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "styled-components": "^5.2.0",
         "webpack": "^4.44.2",
         "webpack-cli": "^3.3.12"
     },
+    "standard": {
+        "ignore": [
+            "/api/**"
+        ]
+    },
+    "eslintConfig": {
+        "extends": [
+            "./node_modules/standard/eslintrc.json"
+        ]
+    },
     "devDependencies": {
+        "@babel/core": "^7.11.6",
+        "@babel/preset-env": "^7.11.5",
+        "@babel/preset-react": "^7.10.4",
+        "babel-loader": "^8.1.0",
         "html-webpack-plugin": "^4.5.0",
+        "standard": "^14.3.4",
         "webpack-dev-server": "^3.11.0"
     }
 }
