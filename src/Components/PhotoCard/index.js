@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-fragments */
 import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { Article, ImgWrapper, Img, Button } from './styles'
 import { MdFavoriteBorder, MdFavorite } from 'react-icons/md'
@@ -22,11 +23,10 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
               <Img src={src} />
             </ImgWrapper>
           </a>
-
           <Button onClick={() => setLiked(!liked)}>
             <Icon size='32px' /> {likes} likes!
           </Button>
-        </Fragment>
+                </Fragment>
       }
     </Article>
   )
