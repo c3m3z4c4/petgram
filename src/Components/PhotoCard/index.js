@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable react/jsx-fragments */
 import React, { Fragment, useEffect, useRef, useState } from 'react'
 import { Article, ImgWrapper, Img, Button } from './styles'
@@ -18,7 +19,7 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
     <Article ref={element}>
       {
         show && <Fragment>
-          <a href={`/detail/${id}`}>
+          <a href={`/?detail=${id}`}>
             <ImgWrapper>
               <Img src={src} />
             </ImgWrapper>
@@ -26,7 +27,7 @@ export const PhotoCard = ({ id, likes = 0, src = DEFAULT_IMAGE }) => {
           <Button onClick={() => setLiked(!liked)}>
             <Icon size='32px' /> {likes} likes!
           </Button>
-                </Fragment>
+        </Fragment>
       }
     </Article>
   )
