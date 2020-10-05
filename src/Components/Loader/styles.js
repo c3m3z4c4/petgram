@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const loaderAnim = styled.div `
+export const loaderAnim = styled.div`
 .lds-circle {
   display: inline-block;
   transform: translateZ(1px);

@@ -1,10 +1,8 @@
-import React from 'react';
-import loaderAnim from './styles';
+import React from 'react'
+import { Loader } from '../../components/Loader/styles'
 
-export const Loader() {
-    return ( 
-        <div>
-            <loaderAnim />
-        </div>
-    );
+export const PhotoLoader = () => {
+  return (
+    <Loader />
+  )
 }
