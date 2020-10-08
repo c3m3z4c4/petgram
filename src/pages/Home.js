@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-fragments */
 import React, { Fragment } from 'react'
 import { ListOfCategories } from '../components/ListOfCategories'
 import { ListOfPhotoCards } from '../container/ListOfPhotoCards'
 
-export const Home = ({ categoryId }) => {
+export const Home = ({ id }) => {
   return (
     <Fragment>
       <ListOfCategories />
-      <ListOfPhotoCards categoryId={categoryId} />
+      <ListOfPhotoCards categoryId={id} />
     </Fragment>
   )
 }
