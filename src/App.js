@@ -27,11 +27,11 @@ export const App = () => {
         {
           ({ isAuth }) =>
             isAuth
-            ? <Router>
+              ? <Router>
                 <Favs path='/favs' />
                 <User path='/user' />
               </Router>
-            : <Router>
+              : <Router>
                 <NotRegisteredUser path='/favs' />
                 <NotRegisteredUser path='/user' />
               </Router>
